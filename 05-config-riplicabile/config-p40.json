@@ -1,0 +1,20 @@
+{
+  "model": "Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf",
+  "port": 8090,
+  "ngl": 99,
+  "flash_attn": "on",
+  "cache_type_k": "kvarn4",
+  "cache_type_v": "kvarn4",
+  "ctx_size": 65536,
+  "threads": 6,
+  "parallel": 1,
+  "no_warmup": true,
+  "metrics": true,
+  "jinja": true,
+  "fit": "off",
+  "reasoning_budget": 1024,
+  "description": "Configurazione ottimizzata per Tesla P40 (24GB VRAM) - Modelli 35B+",
+  "performance_target": "3-4x speedup vs Ollama",
+  "gpu_requirements": "NVIDIA Tesla P40 o equivalente con 24GB+ VRAM",
+  "model_compatibility": "Qwen3.6-35B, Llama3-70B, altri modelli GGUF 35B+"
+}

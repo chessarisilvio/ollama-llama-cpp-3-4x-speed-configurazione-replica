@@ -1,0 +1,19 @@
+{
+  "model": "Qwen3.5-9B-Q5_K_M.gguf",
+  "port": 8081,
+  "ngl": 999,
+  "flash_attn": "auto",
+  "cache_type_k": "kvarn4",
+  "cache_type_v": "kvarn4",
+  "ctx_size": 32768,
+  "threads": 6,
+  "parallel": 1,
+  "no_warmup": true,
+  "metrics": true,
+  "jinja": true,
+  "fit": "off",
+  "description": "Configurazione ottimizzata per RTX 3050 (8GB VRAM) - Modelli 9B",
+  "performance_target": "2-3x speedup vs Ollama",
+  "gpu_requirements": "NVIDIA RTX 3050 o equivalente con 8GB+ VRAM",
+  "model_compatibility": "Qwen3.5-9B, Llama3-8B, Mistral-7B, altri modelli GGUF 7B-13B"
+}

@@ -1,0 +1,26 @@
+{
+  "model": "model.gguf",
+  "port": 8080,
+  "ngl": 99,
+  "flash_attn": "auto",
+  "cache_type_k": "kvarn4",
+  "cache_type_v": "kvarn4",
+  "ctx_size": 16384,
+  "threads": 6,
+  "parallel": 1,
+  "no_warmup": true,
+  "metrics": true,
+  "jinja": true,
+  "fit": "off",
+  "description": "Configurazione generica adattabile per diverse GPU",
+  "performance_target": "2-4x speedup vs Ollama (dipende dalla GPU)",
+  "gpu_requirements": "NVIDIA GPU con supporto CUDA e almeno 4GB VRAM",
+  "model_compatibility": "Tutti i modelli GGUF (adattare parametri in base al modello)",
+  "notes": [
+    "Modificare 'model' con il percorso al file GGUF",
+    "Regolare 'ngl' in base alla VRAM disponibile (99 = tutti i layer, 999 = automatico)",
+    "Aumentare 'ctx_size' se VRAM sufficiente (16384 = 16k token)",
+    "Impostare 'flash_attn' a 'on' se la GPU supporta Flash Attention v2",
+    "Regolare 'threads' in base al numero di core CPU disponibili"
+  ]
+}
